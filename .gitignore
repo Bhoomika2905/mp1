@@ -9,3 +9,5 @@ dist/
 dist/*
 build/
 build/*
+resume-source/
+resume-source/*
