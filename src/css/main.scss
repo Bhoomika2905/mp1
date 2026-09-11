@@ -23,7 +23,6 @@ $shadow: 0 20px 40px rgba(20, 20, 43, 0.12);
 $transition-base: 0.3s ease;
 
 $breakpoints: (
-  laptop: 1366px,
   tablet-landscape: 1024px,
   tablet: 768px,
   mobile: 520px,
@@ -269,10 +268,14 @@ a {
     a {
       position: relative;
       color: rgba(255, 255, 255, 0.75);
-      font-size: 0.95rem;
+      font-size: 1.05rem;
       font-weight: 500;
-      transition: color $transition-base;
+      transition: color $transition-base, font-size $transition-base;
       padding-bottom: 4px;
+
+      .navbar.scrolled & {
+        font-size: 0.9rem;
+      }
 
       &::after {
         content: '';
@@ -618,10 +621,6 @@ a {
   background-position: center;
   background-attachment: fixed;
   color: $color-white;
-
-  @include bp(tablet) {
-    background-attachment: scroll;
-  }
 
   h2 {
     color: $color-white;
