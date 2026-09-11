@@ -4,10 +4,309 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Bhoomika | Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- Navbar -->
+        <header class="navbar" id="navbar">
+            <div class="navbar__inner">
+                <a href="#home" class="navbar__brand nav-link" data-section="home">Bhoomika<span>.</span></a>
+                <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="navbar__nav" id="navMenu">
+                    <ul>
+                        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                        <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                        <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+                        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="section hero" id="home">
+                <div class="hero__content">
+                    <p class="hero__eyebrow fade-in-up">Hi, my name is</p>
+                    <h1 class="fade-in-up fade-in-up--delay-1">Bhoomika</h1>
+                    <h2 class="fade-in-up fade-in-up--delay-2">I build things for the web.</h2>
+                    <p class="hero__desc fade-in-up fade-in-up--delay-3">
+                        I'm a computer science student who enjoys turning ideas into clean,
+                        interactive interfaces &mdash; currently exploring front-end engineering
+                        through UIUC's CS409, The Art of Web Programming.
+                    </p>
+                    <a href="#projects" class="btn nav-link fade-in-up fade-in-up--delay-4" data-section="projects">View My Work</a>
+                </div>
+                <a href="#about" class="hero__scroll-cue nav-link" data-section="about" aria-label="Scroll to About">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </section>
+
+            <!-- About -->
+            <section class="section about" id="about">
+                <div class="container about__grid">
+                    <div class="about__image reveal">
+                        <img src="https://picsum.photos/seed/bhoomika-portrait/600/700" alt="Portrait illustration">
+                    </div>
+                    <div class="about__text reveal">
+                        <span class="section-kicker">About Me</span>
+                        <h2>A little bit about who I am</h2>
+                        <p>
+                            I'm a Computer Science student at the University of Illinois
+                            Urbana&ndash;Champaign with a growing interest in the intersection of
+                            design and engineering. I like building software that feels good to use,
+                            not just software that works.
+                        </p>
+                        <p>
+                            Outside of coursework, I spend my time experimenting with new front-end
+                            techniques, contributing to small side projects, and figuring out how to
+                            make interfaces feel a little more human.
+                        </p>
+                        <ul class="about__facts">
+                            <li><i class="fa-solid fa-graduation-cap"></i> B.S. Computer Science, UIUC</li>
+                            <li><i class="fa-solid fa-location-dot"></i> Urbana&ndash;Champaign, IL</li>
+                            <li><i class="fa-solid fa-mug-hot"></i> Powered by coffee &amp; curiosity</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="section skills" id="skills">
+                <div class="container">
+                    <span class="section-kicker">What I Work With</span>
+                    <h2>Skills &amp; Tools</h2>
+                    <div class="skills__grid">
+                        <div class="skills__col reveal">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>JavaScript (ES6+)</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C</li>
+                            </ul>
+                        </div>
+                        <div class="skills__col reveal">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h3>Front-End</h3>
+                            <ul>
+                                <li>HTML5</li>
+                                <li>SCSS / CSS3</li>
+                                <li>Responsive Design</li>
+                                <li>Accessibility</li>
+                            </ul>
+                        </div>
+                        <div class="skills__col reveal">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Back-End</h3>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>REST APIs</li>
+                                <li>SQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="skills__col reveal">
+                            <i class="fa-solid fa-wrench"></i>
+                            <h3>Tools</h3>
+                            <ul>
+                                <li>Git &amp; GitHub</li>
+                                <li>Webpack</li>
+                                <li>Figma</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects / Carousel -->
+            <section class="section projects" id="projects">
+                <div class="container">
+                    <span class="section-kicker">My Work</span>
+                    <h2>Featured Projects</h2>
+                    <div class="carousel">
+                        <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Previous project">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <div class="carousel__viewport">
+                            <div class="carousel__track" id="carouselTrack">
+                                <article class="carousel__slide">
+                                    <img src="https://picsum.photos/seed/project-one/900/600" alt="Screenshot of Project One">
+                                    <div class="carousel__caption">
+                                        <h3>Campus Event Finder</h3>
+                                        <p>A React-free single page app for browsing and filtering campus events, built with vanilla JS and a REST API.</p>
+                                    </div>
+                                </article>
+                                <article class="carousel__slide">
+                                    <img src="https://picsum.photos/seed/project-two/900/600" alt="Screenshot of Project Two">
+                                    <div class="carousel__caption">
+                                        <h3>Recipe Box</h3>
+                                        <p>A recipe organizer with drag-and-drop meal planning and a searchable ingredient index.</p>
+                                    </div>
+                                </article>
+                                <article class="carousel__slide">
+                                    <img src="https://picsum.photos/seed/project-three/900/600" alt="Screenshot of Project Three">
+                                    <div class="carousel__caption">
+                                        <h3>Study Timer</h3>
+                                        <p>A Pomodoro-style focus timer with animated progress rings and session analytics.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <button class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="Next project">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+
+                        <div class="carousel__dots" id="carouselDots"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience (fixed background) -->
+            <section class="section experience" id="experience">
+                <div class="experience__overlay"></div>
+                <div class="container experience__content">
+                    <span class="section-kicker section-kicker--light">Along The Way</span>
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline__item reveal">
+                            <span class="timeline__date">2025 &mdash; Present</span>
+                            <h3>Undergraduate Student, CS &mdash; UIUC</h3>
+                            <p>Coursework in web programming, data structures, and systems; exploring front-end engineering through CS409.</p>
+                        </div>
+                        <div class="timeline__item reveal">
+                            <span class="timeline__date">2024</span>
+                            <h3>Personal Projects &amp; Open Source</h3>
+                            <p>Built and shipped several small web tools, focusing on clean UI and accessible markup.</p>
+                        </div>
+                        <div class="timeline__item reveal">
+                            <span class="timeline__date">2023</span>
+                            <h3>Started Learning Web Development</h3>
+                            <p>Picked up HTML, CSS, and JavaScript and never really stopped building things.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery / Video -->
+            <section class="section gallery" id="gallery">
+                <div class="container">
+                    <span class="section-kicker">Behind The Scenes</span>
+                    <h2>Process Demo</h2>
+                    <p class="gallery__intro">A quick look at how this very page comes together &mdash; from layout to interaction.</p>
+                    <div class="video-wrapper reveal">
+                        <video controls poster="https://picsum.photos/seed/video-poster/960/540">
+                            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials / Modals -->
+            <section class="section testimonials" id="testimonials">
+                <div class="container">
+                    <span class="section-kicker">Kind Words</span>
+                    <h2>Testimonials</h2>
+                    <div class="testimonials__grid">
+                        <div class="testimonial-card reveal">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>"Bhoomika picks up new tools fast and always ships something that looks polished."</p>
+                            <h4>Course Project Partner</h4>
+                            <button class="btn btn--ghost modal-trigger" data-modal="modal-1">Read full story</button>
+                        </div>
+                        <div class="testimonial-card reveal">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>"Great eye for detail, especially when it comes to layout and interaction design."</p>
+                            <h4>Teaching Assistant</h4>
+                            <button class="btn btn--ghost modal-trigger" data-modal="modal-2">Read full story</button>
+                        </div>
+                        <div class="testimonial-card reveal">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>"Turns feedback around quickly and isn't afraid to rebuild something from scratch to get it right."</p>
+                            <h4>Study Group Peer</h4>
+                            <button class="btn btn--ghost modal-trigger" data-modal="modal-3">Read full story</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer / Contact -->
+        <footer class="section contact" id="contact">
+            <div class="container contact__content">
+                <span class="section-kicker section-kicker--light">Get In Touch</span>
+                <h2>Let's build something together</h2>
+                <p>Always happy to chat about projects, coursework, or web dev in general.</p>
+                <a href="mailto:bhoomik2@illinois.edu" class="btn">Say Hello</a>
+                <div class="social-icons">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="contact__copy">&copy; 2026 Bhoomika. Built for CS409, MP1.</p>
+            </div>
+        </footer>
+
+        <!-- Modals -->
+        <div class="modal" id="modal-1">
+            <div class="modal__backdrop" data-close-modal></div>
+            <div class="modal__content">
+                <button class="modal__close" data-close-modal aria-label="Close">&times;</button>
+                <h3>Course Project Partner</h3>
+                <p>
+                    We paired up for a semester-long project and Bhoomika ended up owning most of the
+                    front-end. What stood out was how quickly the codebase went from a rough prototype
+                    to something that actually felt like a product &mdash; consistent spacing, sensible
+                    component structure, and none of the "it works on my machine" surprises.
+                </p>
+                <p>
+                    Would happily work together again on anything UI-heavy.
+                </p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-2">
+            <div class="modal__backdrop" data-close-modal></div>
+            <div class="modal__content">
+                <button class="modal__close" data-close-modal aria-label="Close">&times;</button>
+                <h3>Teaching Assistant</h3>
+                <p>
+                    In office hours, most students ask "how do I fix this bug." Bhoomika's questions were
+                    usually a step ahead &mdash; "is there a cleaner way to structure this" or "how would
+                    this scale." That attention to layout and interaction design showed up clearly in the
+                    final submissions.
+                </p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-3">
+            <div class="modal__backdrop" data-close-modal></div>
+            <div class="modal__content">
+                <button class="modal__close" data-close-modal aria-label="Close">&times;</button>
+                <h3>Study Group Peer</h3>
+                <p>
+                    We debugged more late-night assignments together than either of us would like to admit.
+                    Bhoomika was always the one willing to throw out a half-working approach and rebuild it
+                    properly instead of patching over it &mdash; which, more than once, saved the whole group
+                    a lot of pain closer to the deadline.
+                </p>
+            </div>
+        </div>
     </body>
 </html>
