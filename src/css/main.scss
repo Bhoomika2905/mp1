@@ -306,7 +306,11 @@ a {
       background: rgba(20, 20, 43, 0.98);
       max-height: 0;
       overflow: hidden;
-      transition: max-height $transition-base;
+      transition: max-height $transition-base, top $transition-base;
+
+      .navbar.scrolled & {
+        top: $navbar-height-scrolled;
+      }
 
       &.open {
         max-height: 400px;
